@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ssh-1",
+    "keyOwner": "ci-pipeline@prod",
+    "fingerprint": "SHA256:K7hdkfi3nF+sZLY3cR8NjXH3mVLcN94kZ1qT7wS8uPE",
+    "lastUsed": "2025-01-03 10:12:44 UTC",
+    "trustLevel": "high",
+    "algorithm": "ed25519",
+    "createdAt": "2024-01-15",
+    "associatedServers": [
+      "prod-web-01.example.com",
+      "prod-web-02.example.com",
+      "prod-api-01.example.com"
+    ]
+  },
+  {
+    "id": "ssh-2",
+    "keyOwner": "ssh-bastion@edge",
+    "fingerprint": "SHA256:B3jdkLs2mG+pYKX2bQ7MiWG2lUKbM83jY0pS6vR7nOD",
+    "lastUsed": "2025-01-02 18:05:12 UTC",
+    "trustLevel": "high",
+    "algorithm": "ed25519",
+    "createdAt": "2023-11-02",
+    "associatedServers": [
+      "bastion-01.example.com",
+      "bastion-02.example.com"
+    ]
+  },
+  {
+    "id": "ssh-3",
+    "keyOwner": "android-play-store",
+    "fingerprint": "SHA256:C4kdmNt3nH+qZLX3cR8OjYI3mWMdO94kZ2rU8xT9pQF",
+    "lastUsed": "2024-12-30 07:41:33 UTC",
+    "trustLevel": "medium",
+    "algorithm": "rsa-2048",
+    "createdAt": "2024-01-09",
+    "associatedServers": [
+      "mobile-srv-su-1.example.com"
+    ]
+  },
+  {
+    "id": "ssh-4",
+    "keyOwner": "internal-binary-signing",
+    "fingerprint": "SHA256:D5lemOu4oI+rZMY4dS9PkZJ4nXNfP05lZ3sV9yU0qRG",
+    "lastUsed": "2024-12-29 16:02:19 UTC",
+    "trustLevel": "medium",
+    "algorithm": "ecdsa-p256",
+    "createdAt": "2024-05-21",
+    "associatedServers": [
+      "signing-srv-01.corp.internal",
+      "signing-srv-02.corp.internal"
+    ]
+  },
+  {
+    "id": "ssh-5",
+    "keyOwner": "sigstore-fulcio",
+    "fingerprint": "SHA256:E6mfnPv5pJ+sZNZ5eT0QlZK5oYOgQ16mZ4tW0zV1rSH",
+    "lastUsed": "2025-01-03 08:44:10 UTC",
+    "trustLevel": "high",
+    "algorithm": "ecdsa-p256",
+    "createdAt": "2024-07-10",
+    "associatedServers": [
+      "sigstore-01.example.com",
+      "sigstore-02.example.com",
+      "sigstore-mirror-1.example.com"
+    ]
+  },
+  {
+    "id": "ssh-6",
+    "keyOwner": "dev-deployment",
+    "fingerprint": "SHA256:F7ngoQw6qK+tZOa6fU1RmZL6pZPhR27nZ5uX1aW2sTI",
+    "lastUsed": "2024-12-20 14:22:55 UTC",
+    "trustLevel": "low",
+    "algorithm": "rsa-2048",
+    "createdAt": "2024-03-12",
+    "associatedServers": [
+      "dev-01.example.com",
+      "dev-02.example.com"
+    ]
+  },
+  {
+    "id": "ssh-7",
+    "keyOwner": "backup-service",
+    "fingerprint": "SHA256:G8ohpRx7rL+uZPb7gV2SnZM7qaPiS38oZ6vY2bX3tUJ",
+    "lastUsed": "2025-01-03 02:15:30 UTC",
+    "trustLevel": "high",
+    "algorithm": "ed25519",
+    "createdAt": "2023-09-05",
+    "associatedServers": [
+      "backup-01.example.com",
+      "backup-02.example.com",
+      "backup-03.example.com"
+    ]
+  },
+  {
+    "id": "ssh-8",
+    "keyOwner": "monitoring-agent",
+    "fingerprint": "SHA256:H9piQy8sM+vZQc8hW3ToON8rbQkT49pZ7wZ3cY4uVK",
+    "lastUsed": "2025-01-03 11:30:45 UTC",
+    "trustLevel": "medium",
+    "algorithm": "rsa-2048",
+    "createdAt": "2024-02-18",
+    "associatedServers": [
+      "monitor-srv-01.example.com"
+    ]
+  }
+]

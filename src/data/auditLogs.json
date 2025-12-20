@@ -1,0 +1,298 @@
+[
+  {
+    "id": "log-1",
+    "timestamp": "2025-01-03 10:12:44 UTC",
+    "actor": "ci-pipeline@prod",
+    "email": "svc+ci@prod",
+    "actionType": "KEY_ROTATED",
+    "targetResource": "Code signing key prod-container-signing",
+    "resourcePath": "/code-signing/keys/prod-container-signing",
+    "metadata": {
+      "key_alias": "prod-container-signing",
+      "rotation_policy": "90d",
+      "previous_key_id": "kms-abc123",
+      "new_key_id": "kms-def456",
+      "trigger": "scheduled",
+      "name": "containers/prod",
+      "run_id": "run-26869"
+    }
+  },
+  {
+    "id": "log-2",
+    "timestamp": "2025-01-03 09:48:10 UTC",
+    "actor": "alex.carter@example.com",
+    "email": "alex.carter@example.com",
+    "actionType": "CERT_UPDATED",
+    "targetResource": "Certificate api.prod.example.com",
+    "resourcePath": "/certificates/api-prod-example-com",
+    "metadata": {
+      "country": "US",
+      "city": "Frankfurt",
+      "metadata": "geo: IP and command summary"
+    }
+  },
+  {
+    "id": "log-3",
+    "timestamp": "2025-01-03 09:38:02 UTC",
+    "actor": "ssh-bastion@edge",
+    "email": "svc+bastion-1",
+    "actionType": "SSH_LOGIN",
+    "targetResource": "SSH key ops-oncall",
+    "resourcePath": "/ssh/keys/ops-oncall-bastion-su-1",
+    "metadata": {
+      "source_ip": "185.14.22.38",
+      "geo": [{
+        "country": "US",
+        "city": "San Francisco"
+      }],
+      "metadata": "Accessed via bastion"
+    }
+  },
+  {
+    "id": "log-4",
+    "timestamp": "2025-01-03 08:44:10 UTC",
+    "actor": "sigstore.fulcio@example.com",
+    "email": "sigstore.fulcio@example.com",
+    "actionType": "CERT_ISSUED",
+    "targetResource": "Certificate ephemeral-signing-2025-01-03",
+    "resourcePath": "/certificates/ephemeral-signing",
+    "metadata": {
+      "subject": "CN=github-actions",
+      "issuer": "Fulcio Intermediate CA",
+      "validity": "10m",
+      "oidc_provider": "github",
+      "workflow_ref": "main.yml@refs/heads/main"
+    }
+  },
+  {
+    "id": "log-5",
+    "timestamp": "2025-01-03 07:22:15 UTC",
+    "actor": "jordan.lee@example.com",
+    "email": "jordan.lee@example.com",
+    "actionType": "KEY_CREATED",
+    "targetResource": "SSH key dev-deployment-jan2025",
+    "resourcePath": "/ssh/keys/dev-deployment",
+    "metadata": {
+      "key_type": "ed25519",
+      "purpose": "Development deployment automation",
+      "approved_by": "security-team@example.com"
+    }
+  },
+  {
+    "id": "log-6",
+    "timestamp": "2025-01-03 02:15:30 UTC",
+    "actor": "backup-service@example.com",
+    "email": "svc+backup",
+    "actionType": "SSH_LOGIN",
+    "targetResource": "SSH key backup-service",
+    "resourcePath": "/ssh/keys/backup-service",
+    "metadata": {
+      "source_ip": "10.0.50.10",
+      "geo": "Internal Network",
+      "target_server": "backup-02.example.com",
+      "operation": "automated_backup"
+    }
+  },
+  {
+    "id": "log-7",
+    "timestamp": "2025-01-02 21:45:22 UTC",
+    "actor": "admin@example.com",
+    "email": "admin@example.com",
+    "actionType": "CERT_REVOKED",
+    "targetResource": "Certificate legacy.api.example.com",
+    "resourcePath": "/certificates/legacy-api",
+    "metadata": {
+      "reason": "Key compromise suspected",
+      "revocation_date": "2025-01-02",
+      "notified_teams": ["security", "platform"]
+    }
+  },
+  {
+    "id": "log-8",
+    "timestamp": "2025-01-02 18:05:12 UTC",
+    "actor": "monitoring-agent@example.com",
+    "email": "svc+monitor",
+    "actionType": "KEY_ACCESSED",
+    "targetResource": "Code signing key monitoring-cert",
+    "resourcePath": "/code-signing/keys/monitoring",
+    "metadata": {
+      "access_type": "read",
+      "purpose": "Certificate expiry check",
+      "automated": true
+    }
+  },
+  {
+    "id": "log-9",
+    "timestamp": "2025-01-02 16:30:05 UTC",
+    "actor": "deploy-bot@example.com",
+    "email": "svc+deploy",
+    "actionType": "CERT_DEPLOYED",
+    "targetResource": "Certificate gateway.example.com",
+    "resourcePath": "/certificates/gateway",
+    "metadata": {
+      "deployment_target": "prod-loadbalancer-01",
+      "deployment_method": "automated",
+      "health_check": "passed"
+    }
+  },
+  {
+    "id": "log-10",
+    "timestamp": "2025-01-02 14:20:33 UTC",
+    "actor": "sarah.johnson@example.com",
+    "email": "sarah.johnson@example.com",
+    "actionType": "KEY_ROTATED",
+    "targetResource": "Code signing key ios-app-store",
+    "resourcePath": "/code-signing/keys/ios-app-store",
+    "metadata": {
+      "rotation_reason": "Scheduled rotation",
+      "previous_expiry": "2025-06-01",
+      "new_expiry": "2026-06-01"
+    }
+  },
+  {
+    "id": "log-11",
+    "timestamp": "2025-01-02 12:10:18 UTC",
+    "actor": "security-scanner@example.com",
+    "email": "svc+security",
+    "actionType": "CERT_SCANNED",
+    "targetResource": "All active certificates",
+    "resourcePath": "/certificates/*",
+    "metadata": {
+      "scan_type": "vulnerability_assessment",
+      "findings": 0,
+      "scanned_count": 45
+    }
+  },
+  {
+    "id": "log-12",
+    "timestamp": "2025-01-02 10:05:42 UTC",
+    "actor": "mike.chen@example.com",
+    "email": "mike.chen@example.com",
+    "actionType": "SSH_KEY_DELETED",
+    "targetResource": "SSH key temp-deployment-2024",
+    "resourcePath": "/ssh/keys/temp-deployment-2024",
+    "metadata": {
+      "deletion_reason": "No longer needed",
+      "last_used": "2024-11-15",
+      "approved_by": "security-team@example.com"
+    }
+  },
+  {
+    "id": "log-13",
+    "timestamp": "2025-01-02 08:15:55 UTC",
+    "actor": "ci-pipeline@staging",
+    "email": "svc+ci-staging",
+    "actionType": "CERT_REQUESTED",
+    "targetResource": "Certificate staging-v2.example.com",
+    "resourcePath": "/certificates/staging-v2",
+    "metadata": {
+      "certificate_type": "Let's Encrypt",
+      "domains": ["staging-v2.example.com", "www.staging-v2.example.com"],
+      "auto_renew": true
+    }
+  },
+  {
+    "id": "log-14",
+    "timestamp": "2025-01-01 22:30:10 UTC",
+    "actor": "alex.carter@example.com",
+    "email": "alex.carter@example.com",
+    "actionType": "POLICY_UPDATED",
+    "targetResource": "Key rotation policy",
+    "resourcePath": "/policies/key-rotation",
+    "metadata": {
+      "policy_type": "key_rotation",
+      "changes": {
+        "hsm_keys_rotation": "180d -> 90d",
+        "software_keys_rotation": "90d -> 60d"
+      },
+      "effective_date": "2025-02-01"
+    }
+  },
+  {
+    "id": "log-15",
+    "timestamp": "2025-01-01 18:45:20 UTC",
+    "actor": "audit-service@example.com",
+    "email": "svc+audit",
+    "actionType": "AUDIT_EXPORT",
+    "targetResource": "Audit logs December 2024",
+    "resourcePath": "/audit/logs/2024-12",
+    "metadata": {
+      "export_format": "JSON",
+      "record_count": 1243,
+      "requester": "compliance-team@example.com",
+      "export_purpose": "Monthly compliance review"
+    }
+  },
+  {
+    "id": "log-16",
+    "timestamp": "2025-01-01 15:20:35 UTC",
+    "actor": "emily.rodriguez@example.com",
+    "email": "emily.rodriguez@example.com",
+    "actionType": "CERT_RENEWED",
+    "targetResource": "Certificate wildcard.example.com",
+    "resourcePath": "/certificates/wildcard",
+    "metadata": {
+      "renewal_method": "manual",
+      "previous_expiry": "2025-01-15",
+      "new_expiry": "2026-01-15",
+      "issuer": "DigiCert"
+    }
+  },
+  {
+    "id": "log-17",
+    "timestamp": "2025-01-01 12:05:48 UTC",
+    "actor": "terraform@infra",
+    "email": "svc+terraform",
+    "actionType": "KEY_IMPORTED",
+    "targetResource": "SSH key terraform-provisioner",
+    "resourcePath": "/ssh/keys/terraform-provisioner",
+    "metadata": {
+      "import_source": "HashiCorp Vault",
+      "key_type": "ed25519",
+      "automation": true
+    }
+  },
+  {
+    "id": "log-18",
+    "timestamp": "2025-01-01 09:30:12 UTC",
+    "actor": "david.kim@example.com",
+    "email": "david.kim@example.com",
+    "actionType": "CERT_VALIDATED",
+    "targetResource": "Certificate mobile.api.example.com",
+    "resourcePath": "/certificates/mobile-api",
+    "metadata": {
+      "validation_method": "DNS-01",
+      "validation_status": "success",
+      "validated_domains": ["mobile.api.example.com"]
+    }
+  },
+  {
+    "id": "log-19",
+    "timestamp": "2024-12-31 23:55:40 UTC",
+    "actor": "rotation-service@example.com",
+    "email": "svc+rotation",
+    "actionType": "KEY_ROTATED",
+    "targetResource": "Code signing key npm-package-signing",
+    "resourcePath": "/code-signing/keys/npm-package",
+    "metadata": {
+      "rotation_type": "automatic",
+      "rotation_schedule": "180d",
+      "next_rotation": "2025-06-30"
+    }
+  },
+  {
+    "id": "log-20",
+    "timestamp": "2024-12-31 20:10:25 UTC",
+    "actor": "security-team@example.com",
+    "email": "security-team@example.com",
+    "actionType": "ACCESS_REVIEW",
+    "targetResource": "All SSH keys",
+    "resourcePath": "/ssh/keys/*",
+    "metadata": {
+      "review_type": "quarterly_access_review",
+      "reviewed_keys": 28,
+      "revoked_keys": 3,
+      "findings": "3 unused keys removed"
+    }
+  }
+]
