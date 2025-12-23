@@ -8,7 +8,6 @@ A web-based dashboard for managing and viewing identity-related assets with filt
 ## Tech Stack
 - Vite + React
 - TypeScript
-- Tailwind CSS
 - PostCSS
 
 ## Features
